@@ -607,12 +607,12 @@ void print_usage() {
   printf("-h                           display usage information and quit\n");
 }
 
-void write_logFile(const char *type,int  size, int duration, int start_time){
+void write_logFile(const char *type,int  size, int duration, long long start_time){
   if (strcmp(type,"File") == 0){
-    fprintf(fd_log, "Size:%u, Duration(usec):%u, StartTime(ms):%u\n",size,duration, start_time); 
+    fprintf(fd_log, "Size:%u, Duration(usec):%u, StartTime(ms):%llu\n",size,duration, start_time);
   }
   if (strcmp(type,"Iteration") == 0){
-    fprintf(fd_it, "Size:%u, Duration(usec):%u, StartTime(ms):%u\n",size,duration, start_time);
+    fprintf(fd_it, "Size:%u, Duration(usec):%u, StartTime(ms):%llu\n",size,duration, start_time);
   }            
 }
 
