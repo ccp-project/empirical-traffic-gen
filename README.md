@@ -70,7 +70,7 @@ Example:
           The seed is used for various random number generators. It is 
           recommended that different clients use different seeds to avoid 
           synchronization.<br> 
-          *default: set seed based on current machine time (not repeatable)*
+          *default (or seed=0): set seed based on current machine time (not repeatable)*
 
    **-h :** print commnad line usage information and exit
 
